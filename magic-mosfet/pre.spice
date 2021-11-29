@@ -1,0 +1,8 @@
+MOSFET Simulation
+* this file edited to remove everything not in tt lib
+.lib "./sky130_fd_pr/models/sky130.lib.spice" tt
+
+* instantiate the inverter
+Xmosfet VPWR VGND GATE VOUT VGND X0
+
+.subckt X0 Vdd Vss gate Vout VSUBS
